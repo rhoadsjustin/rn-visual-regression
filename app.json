@@ -31,14 +31,24 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rhoadsjustin.rnvisualregression"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.rhoadsjustin.rnvisualregression"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0777bff7-c645-4a16-8d98-446d99030608"
       }
     }
   }
