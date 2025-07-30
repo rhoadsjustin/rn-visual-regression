@@ -1,0 +1,6 @@
+appId: com.rhoadsjustin.rnvisualregression
+---
+- launchApp
+- assertVisible: 'Home'
+- takeScreenshot:
+    path: visual-regression-cli/screenshots/diffs/HomeScreen # screenshot will be stored as HomeScreen.png
