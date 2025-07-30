@@ -1,11 +1,10 @@
-### Visual Regression Testing with AI, Maestro, and Expo:
+## Visual Regression Testing with AI, Maestro, and Expo:
+---
+![Visual Regression CLI Interface](assets/visual-regression-cli.png)
 
 ---
-## `visual-regression-cli` -> is the tool that takes the screenshots from the Maestro tests, analyzing with OpenAI, and then a simple UI to showcase the diff. 
 
----
-
-# 📁 File Structure
+## 📁 File Structure
 
 ```
 visual-regression-cli/
@@ -51,5 +50,4 @@ OPENAI_API_KEY=your-key-here
   - notice the path in the `test.yaml`, make a change to app.
   - run `npm run test`
 - watch the diff visualized/analyzed in the simple UI
-- profit 
-
+- profit
