@@ -1,10 +1,64 @@
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
 }
-
-h1 {
-  margin-bottom: 2rem;
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  z-index: 10;
+}
+aside {
+  width: 200px;
+  background: #f0f0f0;
+  padding: 1rem;
+  overflow-y: auto;
+  margin-top: 60px;
+}
+main {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 60px;
+  overflow-y: auto;
+}
+.viewer .images {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.viewer img {
+  max-width: 30%;
+  border: 1px solid #ccc;
+}
+.multi-viewer .build-grid {
+  display: flex;
+  gap: 2rem;
+}
+.build-column {
+  max-width: 33%;
+}
+.build-column img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+}
+.build-column .metrics {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.highlight-boxes {
+  position: relative;
+  outline: 2px dashed red;
+  box-shadow: 0 0 0 2px red;
+}
+button.active {
+  font-weight: bold;
+  background: #0070f3;
+  color: white;
 }
